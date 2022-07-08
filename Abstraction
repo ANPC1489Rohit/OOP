@@ -1,0 +1,54 @@
+Abstraction
+
+
+import java.util.Scanner;
+
+public abstract class alpa_demo
+{
+	 int i,r,n,sum=0;
+      public void demo()
+      {
+    	  
+      }
+      
+      public void alpa1()
+      {
+
+    	  
+    	  
+    	  while(n>0)
+    	  {
+    		  r=n%10;
+    		  sum=sum+r;
+    		  n=n/10;
+    	  }
+    	  System.out.println("Sum of the number is :" +sum);
+    	  
+    	  
+      }
+   
+}
+-------------------------------------------
+import java.util.Scanner;
+
+public class gama extends alpa_demo
+{
+	public static void main(String[] args)
+	{
+		gama obj=new gama();
+		obj.beta();
+	}
+	public void beta()
+	{
+		 int i,r,n,sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your number:");
+		i=sc.nextInt();
+  	  sum=sc.nextInt();
+  	  r=sc.nextInt();
+  	  n=sc.nextInt();
+  	  gama obj=new gama();
+  	  obj.alpa1();
+	}
+ 
+}
