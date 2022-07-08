@@ -1,0 +1,52 @@
+
+package constructor;
+
+import java.util.Scanner;
+
+public class const_demo
+{
+	public void user_name()
+	{
+		String name;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter you name:");
+		 name=sc.nextLine();
+	}
+	public void ac_no()
+	{
+		int i;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your account number:");
+	     i=sc.nextInt();
+	}
+	public void deposit()
+	{
+		 long amt,balance=0;  
+		 float p=100,r=12,t=2,si;
+		 Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter the amount you want to deposit: ");  
+	        amt = sc.nextLong();  
+	        balance = balance + amt; 
+	        
+	        si=(p*r*t)/100;
+	        System.out.println("simple intrest of 20%:" +si);
+		
+	}
+
+	public  static void main(String[] args)
+	{
+		proces();
+		
+	}
+	public static void proces()
+	{
+		
+		const_demo obj=new const_demo();
+	    obj.user_name();
+	    obj.ac_no();
+		obj.deposit();
+	    
+	    
+		
+	}
+}
